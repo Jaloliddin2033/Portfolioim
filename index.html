@@ -106,14 +106,6 @@ html.js .sign-letter.on:hover,html.js .sign-letter.on.flick{animation:flicker .7
 .meta-value{display:block;font:400 clamp(2.2rem,3.4vw,3rem)/1 var(--serif);letter-spacing:-.02em}
 .meta-label{display:block;margin-top:8px;color:var(--muted)}
 
-/* Ticker */
-.ticker{border-block:1px solid var(--line);overflow:hidden;padding:22px 0;background:var(--bg)}
-.ticker-track{display:flex;width:max-content;animation:marquee 40s linear infinite}
-.ticker-track span{display:flex;align-items:center;gap:36px;padding-right:36px;font:500 clamp(1.6rem,3.4vw,2.8rem)/1 var(--sans);letter-spacing:-.04em;white-space:nowrap}
-.ticker-track span:nth-child(even){font:400 italic clamp(1.8rem,3.8vw,3.1rem)/1 var(--serif);letter-spacing:0;color:var(--signal-soft)}
-.ticker-track span::after{content:"";width:12px;height:12px;border-radius:50%;border:1px solid var(--faint)}
-.ticker:hover .ticker-track{animation-play-state:paused}
-@keyframes marquee{to{transform:translateX(-50%)}}
 
 /* Sections */
 section{padding:clamp(88px,12vw,160px) 0}
@@ -289,7 +281,7 @@ html.js .reveal.visible{opacity:1;transform:none}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
   html.js .sign-letter{animation:none!important;color:var(--lit-c);text-shadow:var(--glow)}
   html.js .reveal{opacity:1;transform:none}
-  .stamp svg,.ticker-track{animation:none!important}
+  .stamp svg{animation:none!important}
 }
 </style>
 </head>
@@ -340,10 +332,6 @@ html.js .reveal.visible{opacity:1;transform:none}
     </div>
   </div>
 </section>
-
-<div class="ticker" role="marquee" aria-label="Ish yo'nalishlari">
-  <div class="ticker-track" aria-hidden="true"><span>Tashqi reklama</span><span>Poligrafiya</span><span>SMM dizayn</span><span>Vektorli grafika</span><span>Brending</span><span>Tashqi reklama</span><span>Poligrafiya</span><span>SMM dizayn</span><span>Vektorli grafika</span><span>Brending</span></div>
-</div>
 
 <section id="works">
   <div class="wrap">
